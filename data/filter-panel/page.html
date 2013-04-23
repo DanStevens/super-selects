@@ -3,8 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
   <title>Phrase Indexer</title>
-  <script type="text/javascript" src="../jquery.js"></script>
+  <script type="text/javascript" src="../jquery/js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../jquery/js/jquery-ui-1.10.2.custom.js"></script>
   <script type="text/javascript" src="page.js"></script>
+  <link rel="stylesheet" href="../jquery/css/smoothness/jquery-ui-1.10.2.custom.css" />
   <style type="text/css" media="all">
     body {
       font: 10pt arial, helvetica, sans-serif;
@@ -25,7 +27,7 @@
     }
     table, tr, td {
       color: black;
-      background-color: white;
+      //background-color: white;
       border: 1px solid;
       border-collapse: collapse;
       width: 100%;
@@ -38,6 +40,12 @@
     }
     #actionsContainer {
       text-align: right;
+    }
+    #selectable .ui-selecting {
+      background: #ccc;
+    }
+    #selectable .ui-selected {
+      background: #999;
     }
   </style>
 
@@ -55,7 +63,7 @@
     <thead>
       <tr><td>Text</td><td>Value</td></tr>
     </thead>
-    <tbody>
+    <tbody id="selectable">
       <tr><td>Option 1</td><td>op1</td></tr>
       <tr><td>Option 2</td><td>op2</td></tr>
       <tr><td>Option 3</td><td>op3</td></tr>
@@ -84,6 +92,10 @@
   <button id="applyButton">Apply</button>
   <button id="closeButton">Close</button>
 </div>
+
+<script type="text/javascript">
+$( "#selectable" ).selectable();
+</script>
 
 </body>
 
