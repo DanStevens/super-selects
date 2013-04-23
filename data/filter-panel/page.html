@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>Phrase Indexer</title>
+  <script type="text/javascript" src="../jquery.js"></script>
+  <script type="text/javascript" src="page.js"></script>
+  <style type="text/css" media="all">
+    body {
+      font: 10pt arial, helvetica, sans-serif;
+      padding: 5px;
+    }
+    div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #filterContainer {
+      margin-bottom: 20px;
+    }
+    div:last-child {
+      margin-bottom: 0;
+    }
+    #filterField {
+      width: inherit;
+    }
+    table, tr, td {
+      color: black;
+      background-color: white;
+      border: 1px solid;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table tr td:nth-child(1) {
+      width: 66%;
+    }
+    table tr td:nth-child(2) {
+      width: 34%;
+    }
+    #actionsContainer {
+      text-align: right;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div id="filterContainer">
+  <label for="filterField">Filter:</label><br />
+  <input type="text" id="filterField" />
+</div>
+
+<div id="optionsTableContainer">
+  <table id="optionsTable">
+    <thead>
+      <tr><td>Text</td><td>Value</td></tr>
+    </thead>
+    <tbody>
+      <tr><td>Option 1</td><td>op1</td></tr>
+      <tr><td>Option 2</td><td>op2</td></tr>
+      <tr><td>Option 3</td><td>op3</td></tr>
+      <tr><td>Option 4</td><td>op4</td></tr>
+      <tr><td>Option 5</td><td>op5</td></tr>
+      <tr><td>Option 6</td><td>op6</td></tr>
+      <tr><td>Option 7</td><td>op7</td></tr>
+      <tr><td>Option 8</td><td>op8</td></tr>
+      <tr><td>Option 9</td><td>op9</td></tr>
+      <tr><td>Option 10</td><td>op10</td></tr>
+      <tr><td>Option 11</td><td>op11</td></tr>
+      <tr><td>Option 12</td><td>op12</td></tr>
+      <tr><td>Option 13</td><td>op13</td></tr>
+      <tr><td>Option 14</td><td>op14</td></tr>
+      <tr><td>Option 15</td><td>op15</td></tr>
+      <tr><td>Option 16</td><td>op16</td></tr>
+      <tr><td>Option 17</td><td>op17</td></tr>
+      <tr><td>Option 18</td><td>op18</td></tr>
+      <tr><td>Option 19</td><td>op19</td></tr>
+      <tr><td>Option 20</td><td>op20</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="actionsContainer">
+  <button id="applyButton">Apply</button>
+  <button id="closeButton">Close</button>
+</div>
+
+</body>
+
+</html>
