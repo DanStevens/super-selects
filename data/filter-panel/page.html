@@ -41,10 +41,10 @@
     #actionsContainer {
       text-align: right;
     }
-    #selectable .ui-selecting {
+    .selectable .ui-selecting {
       background: #ccc;
     }
-    #selectable .ui-selected {
+    .selectable .ui-selected {
       background: #999;
     }
   </style>
@@ -63,7 +63,7 @@
     <thead>
       <tr><td>Text</td><td>Value</td></tr>
     </thead>
-    <tbody id="selectable">
+    <tbody class="selectable">
       <tr><td>Option 1</td><td>op1</td></tr>
       <tr><td>Option 2</td><td>op2</td></tr>
       <tr><td>Option 3</td><td>op3</td></tr>
@@ -94,7 +94,7 @@
 </div>
 
 <script type="text/javascript">
-$( "#selectable" ).selectable();
+$( ".selectable" ).selectable();
 </script>
 
 </body>
